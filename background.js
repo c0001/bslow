@@ -112,7 +112,7 @@ async function onBeforeSendHeaders(details)
     
     
     // 以上应该已经排除完毕。准备延时
-    var sleep_t=getRandomTime(14, 22);
+    var sleep_t=getRandomTime(0.5, 0.5);
     // console.debug(`wait ${sleep_t}ms  ${targetHost}\t ${filename}`)
     await sleep(sleep_t);
     // console.debug(`now  ${sleep_t}ms  ${targetHost}\t ${filename}`)
